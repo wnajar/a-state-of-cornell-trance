@@ -1,0 +1,272 @@
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: #111;
+    color: #fff;
+    font: 16px "Roboto", "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
+}
+body {
+    width: 95%;
+    min-width: 1111px;
+    margin: 25px auto 25px auto;
+}
+header {
+    padding: 15px 30px;
+    background: -moz-linear-gradient(top,  rgba(17,17,17,0) 0%, rgba(17,17,17,1) 25%, rgba(51,51,51,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(17,17,17,0)), color-stop(25%,rgba(17,17,17,1)), color-stop(100%,rgba(51,51,51,1)));
+    background: -webkit-linear-gradient(top,  rgba(17,17,17,0) 0%,rgba(17,17,17,1) 25%,rgba(51,51,51,1) 100%);
+    background: -ms-linear-gradient(top,  rgba(17,17,17,0) 0%,rgba(17,17,17,1) 25%,rgba(51,51,51,1) 100%);
+    background: linear-gradient(to bottom,  rgba(17,17,17,0) 0%,rgba(17,17,17,1) 25%,rgba(51,51,51,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00111111', endColorstr='#333333',GradientType=0 );
+}
+img.logo {
+    display: inline-block;
+    float: left;
+    margin: 5px 15px 0 0;
+}
+header h1 {
+    font-size: 36px;
+    color: #fff;
+    background: -webkit-linear-gradient(#fff, #eee);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+}
+span.episodenumber.episodehighlight {
+    border-bottom: 2px solid #54ff68
+}
+p.subheader {
+    margin: 0;
+    font-size: 14px;
+}
+section {
+    display: block;
+    padding: 15px 30px;
+    background: #444;
+}
+section#nowplaying {
+    display: none;
+    background: #222;
+}
+div#tipsandtricks {
+    margin-top: 5px;
+    font-size: 14px;
+}
+span.keyboard {
+    margin: 0 2px;
+    padding: 1px 9px;
+    font-family: Consolas, 'Liberation Mono', Courier, monospace;
+    color: #333;
+    background: #f6f6f6;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    cursor: pointer;
+}
+div#searchbar {
+    display: none
+}
+#searchbar input[type="text"] {
+    width: 300px
+}
+div#addtrack {
+    display: none
+}
+div#addresponse {
+    font-size: 14px;
+    padding: 10px 0;
+    color: #6feeff;
+}
+p.directionheader, #addresponse ol li strong {
+    color: #fff
+}
+#addresponse ol {
+    margin: 0;
+    padding-left: 35px;
+}
+div.formitem {
+    display: inline-block;
+    margin: 0 8px 0 0;
+    font-size: 16px;
+    color: #54ff68;
+}
+input[type=text] {
+    background: #333;
+    color: #fff;
+    margin: 0 0 0 5px;
+    padding: 8px;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    font-family: "Roboto", "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
+    -webkit-transition: all linear 0.2s;
+    -moz-transition: all linear 0.2s;
+    -ms-transition: all linear 0.2s;
+    transition: all linear 0.2s;
+}
+input[type=text]:focus {
+    background: #282828
+}
+input[type=submit] {
+    margin: 0 0 0 5px;
+    padding: 8px 10px;
+    background: #555;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 15px;
+    -webkit-transition: all linear 0.2s;
+    -moz-transition: all linear 0.2s;
+    -ms-transition: all linear 0.2s;
+    transition: all linear 0.2s;
+}
+input[type=submit]:hover {
+
+}
+.formitem.soundcloudurl input {
+    width: 75px
+}
+.formitem.genre input {
+    width: 75px
+}
+.formitem.length input {
+    width: 35px
+}
+span.whatisthis {
+    color: #a2f4ff;
+    cursor: pointer;
+}
+section#tracklist {
+    background: #222;
+    opacity: 0.5;
+}
+.blurred {
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    filter: blur(2px);
+}
+
+section#tracklist.blurred ol li {
+	cursor: default;
+}
+
+#tracklist .tracklistlabel {
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: underline;
+    color: #6feeff;
+    font-size: 16px;
+    width: 35%;
+}
+div.title.tracklistlabel {
+    /* fix some weird positioning bugs */
+    position: relative;
+    left: -4px;
+}
+div.genre.tracklistlabel {
+    /* fix some weird positioning bugs */
+    position: relative;
+    left: -10px;
+}
+div.length.tracklistlabel {
+    /* fix some weird positioning bugs */
+    position: relative;
+    left: -12px;
+}
+#tracklist .tracklistlabel.genre, ol#tracklist li span.genre {
+    width: 15%
+}
+#tracklist .tracklistlabel.length, ol#tracklist li span.length {
+    width: 10%
+}
+ol#tracklist {
+    margin: 5px 0 0 0;
+    list-style-type: none;
+    padding: 0;
+    max-height: 1000px;
+    overflow-y: auto;
+}
+ol#tracklist li {
+    font-size: 16px;
+    line-height: 30px;
+    -webkit-transition: all linear 0.2s;
+    -moz-transition: all linear 0.2s;
+    -ms-transition: all linear 0.2s;
+    transition: all linear 0.2s;
+}
+ol#tracklist li:hover {
+    background: #333;
+    cursor: pointer;
+}
+ol#tracklist li span {
+    display: inline-block;
+    width: 35%;
+}
+ol#tracklist li span.hidden {
+    display: none
+}
+section h2 {
+    font-size: 20px;
+    text-shadow: 1px 2px 0 rgba(0,0,0,0.3);
+    font-weight: normal;
+    margin: 0 0 10px 0;
+}
+#primers ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+}
+#primers ul li {
+    display: inline-block;
+    cursor: pointer;
+    color: #a2f4ff;
+    background: #333;
+    margin: 0 20px 0 0;
+    padding: 8px 14px;
+    -webkit-transition: all linear 0.2s;
+    -moz-transition: all linear 0.2s;
+    -ms-transition: all linear 0.2s;
+    transition: all linear 0.2s;
+}
+#primers ul li:not(.separator):hover {
+    background: #282828
+}
+#primers ul li.separator {
+    background: none;
+    color: #eee;
+    cursor: default;
+    font-size: 14px;
+    margin: 0 10px 0 -10px;
+}
+#primers ul li.addtrack {
+    color: #54ff68
+}
+#musicplayer {
+    margin: 10px 0 0 0
+}
+footer {
+    display: block;
+    margin: 0 0 25px 0;
+    padding: 15px 30px;
+    background: #191919;
+}
+footer p {
+    color: #ddd
+}
+p {
+    margin: 5px 0
+}
+a:link, a:visited {
+    text-decoration: none;
+    color: #a2f4ff;
+}
+span.resultsupdate {
+    font-size: 13px;
+    margin: 0 0 0 15px;
+    color: #a2f4ff;
+}
+li.nomatch {
+    color: #FF7878
+}
